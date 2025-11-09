@@ -1,0 +1,99 @@
+/* 1. Global Reset & Basic Styling */
+body {
+    /* กำหนดฟอนต์หลักที่อ่านง่าย */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* กำหนดสีพื้นหลังอ่อนๆ */
+    background-color: #f4f4f9; 
+    /* กำหนดสีข้อความหลัก */
+    color: #333;
+    /* ลบขอบ (Margin) เริ่มต้นของ body */
+    margin: 0; 
+    line-height: 1.6;
+}
+
+/* 2. Layout & Container */
+header, main, footer {
+    /* จัดเนื้อหาให้อยู่ตรงกลางและจำกัดความกว้าง */
+    max-width: 960px;
+    margin: 0 auto;
+    /* เพิ่ม Padding ด้านข้างเพื่อไม่ให้เนื้อหาชิดขอบจอเกินไป */
+    padding: 20px;
+}
+
+/* 3. Header Styling */
+header {
+    background-color: #007bff; /* สีน้ำเงินสำหรับแถบ Header */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* 4. Navigation (Nav) Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex; /* จัดเรียงเมนูในแนวนอน */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cce0ff; /* เปลี่ยนสีเมื่อเอาเมาส์ไปชี้ */
+}
+
+/* 5. Main Content Styling */
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* มุมโค้งมน */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* 6. Link Styling (ทั่วไปในเนื้อหา) */
+a:not(nav a) {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover:not(nav a) {
+    text-decoration: underline;
+}
+
+/* 7. Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    color: #777;
+    font-size: 0.9em;
+}
